@@ -1,0 +1,119 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+/* Global Smooth Scrolling and Scrollbar Removal */
+html {
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+html::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    background-color: #f8fafc;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* Dropdown Text Visibility */
+select, option {
+    color: #000000 !important;
+}
+
+select:disabled {
+    color: #9ca3af !important;
+}
+
+/* Qualitative Load Label Colors */
+.text-green-600 { color: #16a34a; }
+.bg-green-50 { background-color: #f0fdf4; }
+.text-teal-600 { color: #0d9488; }
+.bg-teal-50 { background-color: #f0fdfa; }
+.text-orange-600 { color: #ea580c; }
+.bg-orange-50 { background-color: #fff7ed; }
+.text-red-600 { color: #dc2626; }
+.bg-red-50 { background-color: #fef2f2; }
+
+/* Branch List Styling */
+.branch-card {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.branch-card:hover {
+    transform: translateX(4px);
+    border-color: #bfdbfe;
+    background-color: #f8fafc;
+}
+
+/* Personality Tag Styling */
+.branch-personality-tag {
+    font-size: 10px;
+    font-weight: 500;
+    font-style: italic;
+    color: #94a3b8; /* text-slate-400 */
+    letter-spacing: -0.01em;
+}
+
+/* Expansion: Spacious Container */
+main.container {
+    max-width: 1500px !important;
+    width: 100% !important;
+    margin: 0 auto !important;
+}
+
+/* Responsive Grid Spacing */
+.grid {
+    gap: 1.5rem !important;
+}
+
+/* Service Card Styling */
+.grid button.transition-all.border-2 {
+    padding: 2rem !important;
+    min-height: auto !important;
+    border-radius: 1.25rem !important;
+    background-color: #ffffff !important;
+    border-color: #f1f5f9 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06) !important;
+    transition: all 0.2s ease-in-out !important;
+}
+
+.grid button.transition-all.border-2:hover {
+    transform: translateY(-4px) !important;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
+    border-color: #2563eb !important;
+}
+
+/* Preparation Panel adjustments */
+#preparation-panel {
+    margin-top: 3rem !important;
+    padding: 2.5rem !important;
+    border-radius: 1.5rem !important;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06) !important;
+}
+
+/* Utility: Hide Scrollbar */
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+.no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+/* Disabled Appointment Slot Styling */
+button:disabled {
+    cursor: not-allowed !important;
+    pointer-events: none;
+    box-shadow: none !important;
+    transform: none !important;
+}
